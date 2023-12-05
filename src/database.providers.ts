@@ -15,6 +15,9 @@ export const databaseProviders = [
         port: +process.env.DATABASE_PORT,
         entities: [],
         synchronize: true,
+        extra: {
+          trustServerCertificate: true,
+        }
       });
       return dataSource.initialize();
     },
