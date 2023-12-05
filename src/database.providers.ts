@@ -13,7 +13,7 @@ export const databaseProviders = [
         database: process.env.DATABASE_NAME,
         host: process.env.DATABASE_HOST,
         port: +process.env.DATABASE_PORT,
-        entities: [],
+        entities: [Qrdata],
         synchronize: true,
         extra: {
           trustServerCertificate: true,
