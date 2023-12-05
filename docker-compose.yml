@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  nest:
+    image: node:20
+    restart: "always"
+    volumes:
+      - ./:/nest-app/
